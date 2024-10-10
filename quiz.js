@@ -2,7 +2,7 @@
 
 const checkAnswer = () => {
     correctAnswer = '4';  // Correct Answer      
-    userAnswer = document.querySelector(input [type="radio"]).getattribute('value'); //Retrieve the User’s Answer
+    userAnswer = document.querySelector('input[name=quiz]:checked').value; //Retrieve the User’s Answer
     if (userAnswer == correctAnswer ) {
         document.querySelector('feedback').textContent = 'Correct! Well done.';
     } else {
